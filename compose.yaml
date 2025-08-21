@@ -1,0 +1,7 @@
+﻿services:
+  ms-carservice:
+    image: ms-carservice
+    build:
+      context: .
+      dockerfile: Dockerfile
+

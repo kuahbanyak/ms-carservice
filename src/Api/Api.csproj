@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <RootNamespace>mscarservice.Api</RootNamespace>
+        <AssemblyName>mscarservice.Api</AssemblyName>
+        <IsWebConfigTransformDisabled>true</IsWebConfigTransformDisabled>
+        <ServerGarbageCollection>true</ServerGarbageCollection>
+        <ConcurrentGarbageCollection>false</ConcurrentGarbageCollection>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="StyleCop.Analyzers" />
+        <PackageReference Include="SonarAnalyzer.CSharp" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="Lib\*.*">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Update="appsettings.Local.json" CopyToPublishDirectory="Never" />
+        <None Include="wwwroot\**">
+            <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+        </None>
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Application\Application.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Controller\" />
+    </ItemGroup>
+
+</Project>
