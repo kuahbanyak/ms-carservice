@@ -5,13 +5,34 @@
         <AssemblyName>mscarservice.Application</AssemblyName>
     </PropertyGroup>
     <ItemGroup>
-    <PackageReference Include="StyleCop.Analyzers" />
-    <PackageReference Include="SonarAnalyzer.CSharp" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
     </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ardalis.GuardClauses" />
+    <PackageReference Include="FluentValidation" />
+    <PackageReference Include="FluentValidation.AspNetCore" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" />
+    <PackageReference Update="StyleCop.Analyzers">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Update="SonarAnalyzer.CSharp">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" />
+    <PackageReference Include="Polly" />
+    <PackageReference Include="Scrutor" />
+    <PackageReference Include="System.Linq.Dynamic.Core" />
+    <PackageReference Include="Z.EntityFramework.Plus.EFCore" />
+  </ItemGroup>
+    
 
 </Project>

@@ -1,20 +1,38 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project>
+﻿<Project>
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
   <ItemGroup>
-    <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
-    <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
-    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0" />
-    <PackageVersion Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0" />
-    <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.5.0" />
-    <PackageVersion Include="coverlet.collector" Version="6.0.2" />
-    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
-    <PackageVersion Include="xunit" Version="2.9.2" />
-    <PackageVersion Include="xunit.runner.visualstudio" Version="2.8.2" />
-    <PackageVersion Include="StyleCop.Analyzers" Version="1.2.0.528" />
-    <PackageVersion Include="SonarAnalyzer.CSharp" Version="9.14.0.23445" />
-    <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageVersion Include="Ardalis.GuardClauses" Version="5.0.0" />
+    <PackageVersion Include="AspNetCore.HealthChecks.Network" Version="9.0.0" />
+    <PackageVersion Include="AspNetCore.HealthChecks.SqlServer" Version="9.0.0" />
+    <PackageVersion Include="FluentValidation" Version="12.0.0" />
+    <PackageVersion Include="FluentValidation.AspNetCore" Version="11.3.1" />
+    <PackageVersion Include="FluentValidation.DependencyInjectionExtensions" Version="12.0.0" />
+    <PackageVersion Include="MediatR" Version="12.3.0" />
+    <PackageVersion Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.23.0" />
+    <PackageVersion Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.1" />
+    <PackageVersion Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="9.0.1" />
+    <PackageVersion Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.0" />
+    <PackageVersion Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="9.0.1" />
+    <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="9.0.8" />
+    <PackageVersion Include="Microsoft.Bcl.AsyncInterfaces" Version="9.0.1" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="9.0.1" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.1" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.1" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.1" />
+    <PackageVersion Include="NSwag.AspNetCore" Version="14.5.0" />
+    <PackageVersion Include="Polly" Version="8.6.3" />
+    <PackageVersion Include="Quartz.AspNetCore" Version="3.15.0" />
+    <PackageVersion Include="Quartz.Plugins" Version="3.15.0" />
+    <PackageVersion Include="Quartz.Serialization.Json" Version="3.15.0" />
+    <PackageVersion Include="Scrutor" Version="6.1.0" />
+    <PackageVersion Include="Serilog.AspNetCore" Version="9.0.0" />
+    <PackageVersion Include="SonarAnalyzer.CSharp" Version="10.15.0.120848" />
+    <PackageVersion Include="StyleCop.Analyzers" Version="1.1.118" />
+    <PackageVersion Include="System.Linq.Async" Version="6.0.3" />
+    <PackageVersion Include="System.Linq.Dynamic.Core" Version="1.6.7" />
+    <PackageVersion Include="Z.EntityFramework.Plus.EFCore" Version="9.103.9.3" />
+    <PackageVersion Include="ZymLabs.NSwag.FluentValidation.AspNetCore" Version="0.7.1" />
   </ItemGroup>
 </Project>

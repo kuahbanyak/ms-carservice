@@ -7,10 +7,28 @@
         <ServerGarbageCollection>true</ServerGarbageCollection>
         <ConcurrentGarbageCollection>false</ConcurrentGarbageCollection>
     </PropertyGroup>
+    
+    <PropertyGroup Condition=" '$(RunConfiguration)' == 'Api'" />
+    
     <ItemGroup>
-        <PackageReference Include="StyleCop.Analyzers" />
-        <PackageReference Include="SonarAnalyzer.CSharp" />
+      <PackageReference Include="AspNetCore.HealthChecks.Network" />
+      <PackageReference Include="AspNetCore.HealthChecks.SqlServer" />
+      <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" />
+      <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" />
+      <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+      <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="NSwag.AspNetCore" />
+      <PackageReference Include="System.Linq.Async" />
+      <PackageReference Include="ZymLabs.NSwag.FluentValidation.AspNetCore" />
     </ItemGroup>
+    
     <ItemGroup>
         <Content Include="Lib\*.*">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -23,8 +41,4 @@
     <ItemGroup>
         <ProjectReference Include="..\Application\Application.csproj" />
     </ItemGroup>
-    <ItemGroup>
-      <Folder Include="Controller\" />
-    </ItemGroup>
-
 </Project>

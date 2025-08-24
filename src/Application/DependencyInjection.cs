@@ -1,6 +1,6 @@
-﻿
-
-// namespace mscarservice.Api;
+// using Microsoft.Extensions.DependencyInjection;
+//
+// namespace mscarservice.Application;
 //
 // public static class DependencyInjection
 // {
